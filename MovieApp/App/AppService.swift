@@ -12,4 +12,8 @@ extension Container {
     var storage: Factory<StorageServicable> {
         Factory(self) { StorageService() }
     }
+    
+    var movieService: Factory<MovieService> {
+        Factory(self) { MovieServiceImp(storage: self.storage())}
+    }
 }

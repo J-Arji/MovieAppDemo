@@ -41,6 +41,7 @@
 		698C6BBA2C5EF4CE0085E23F /* SearchInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BB92C5EF4CE0085E23F /* SearchInput.swift */; };
 		698C6BBD2C5EF6D00085E23F /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 698C6BBC2C5EF6D00085E23F /* Factory */; };
 		698C6BBF2C5EF6E20085E23F /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BBE2C5EF6E20085E23F /* AppService.swift */; };
+		698C6BC52C5EF99F0085E23F /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BC42C5EF99F0085E23F /* MovieService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		698C6BB72C5EF2D70085E23F /* MovieDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDTO.swift; sourceTree = "<group>"; };
 		698C6BB92C5EF4CE0085E23F /* SearchInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInput.swift; sourceTree = "<group>"; };
 		698C6BBE2C5EF6E20085E23F /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		698C6BC42C5EF99F0085E23F /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,13 +127,13 @@
 			children = (
 				698C6B582C5EDA640085E23F /* AppDelegate.swift */,
 				698C6B5A2C5EDA640085E23F /* SceneDelegate.swift */,
+				698C6BBE2C5EF6E20085E23F /* AppService.swift */,
 				698C6B712C5EE4C50085E23F /* FlowCoordinator */,
 				698C6B7D2C5EE6620085E23F /* Networking */,
 				698C6B782C5EE5CE0085E23F /* Storage */,
 				698C6B922C5EEB360085E23F /* Extention */,
 				698C6B952C5EEBE60085E23F /* Constant */,
 				698C6B702C5EDC480085E23F /* Resource */,
-				698C6BBE2C5EF6E20085E23F /* AppService.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				698C6BA52C5EF12A0085E23F /* MovieRemoteRepositoryImp.swift */,
+				698C6BC42C5EF99F0085E23F /* MovieService.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				698C6B9D2C5EEE940085E23F /* SsearchVC.swift in Sources */,
 				698C6BBF2C5EF6E20085E23F /* AppService.swift in Sources */,
 				698C6B8A2C5EE7990085E23F /* DataTransferError.swift in Sources */,
+				698C6BC52C5EF99F0085E23F /* MovieService.swift in Sources */,
 				698C6B9F2C5EEEA10085E23F /* SearchViewModel.swift in Sources */,
 				698C6B982C5EEDD50085E23F /* ReusableView+Extention.swift in Sources */,
 				698C6B732C5EE4E50085E23F /* Coordinator.swift in Sources */,
