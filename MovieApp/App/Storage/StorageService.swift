@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 protocol StorageServicable {
     var apiKey: String? { get set }
     func setup()
@@ -18,7 +19,11 @@ class StorageService: StorageServicable {
 
     
     
+    
     @MainActor public func setup() {
-    }
+        guard let key =  Bundle.main.info(for: "API_KEY")  else { fatalError("Please Set API Key") }
+        //Note: please first set Key
+            apiKey = key
+        }
 }
 

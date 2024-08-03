@@ -24,6 +24,7 @@
 		698C6B8D2C5EE7BA0085E23F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6B8C2C5EE7BA0085E23F /* HTTPMethod.swift */; };
 		698C6B8F2C5EE7E30085E23F /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6B8E2C5EE7E30085E23F /* ErrorModel.swift */; };
 		698C6B912C5EEA2F0085E23F /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 698C6B902C5EEA2F0085E23F /* Config.xcconfig */; };
+		698C6B942C5EEB570085E23F /* Bundle + info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6B932C5EEB570085E23F /* Bundle + info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		698C6B8C2C5EE7BA0085E23F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		698C6B8E2C5EE7E30085E23F /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		698C6B902C5EEA2F0085E23F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		698C6B932C5EEB570085E23F /* Bundle + info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle + info.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				698C6B7D2C5EE6620085E23F /* Networking */,
 				698C6B782C5EE5CE0085E23F /* Storage */,
+				698C6B922C5EEB360085E23F /* Extention */,
 				698C6B712C5EE4C50085E23F /* FlowCoordinator */,
 				698C6B582C5EDA640085E23F /* AppDelegate.swift */,
 				698C6B5A2C5EDA640085E23F /* SceneDelegate.swift */,
@@ -169,6 +172,14 @@
 				698C6B832C5EE69F0085E23F /* Data+Decode.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		698C6B922C5EEB360085E23F /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				698C6B932C5EEB570085E23F /* Bundle + info.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 				698C6B592C5EDA640085E23F /* AppDelegate.swift in Sources */,
 				698C6B822C5EE6960085E23F /* URLRequest+CURL.swift in Sources */,
 				698C6B842C5EE69F0085E23F /* Data+Decode.swift in Sources */,
+				698C6B942C5EEB570085E23F /* Bundle + info.swift in Sources */,
 				698C6B8D2C5EE7BA0085E23F /* HTTPMethod.swift in Sources */,
 				698C6B5B2C5EDA640085E23F /* SceneDelegate.swift in Sources */,
 				698C6B8A2C5EE7990085E23F /* DataTransferError.swift in Sources */,
