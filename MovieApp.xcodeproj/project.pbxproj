@@ -28,6 +28,7 @@
 		698C6B982C5EEDD50085E23F /* ReusableView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6B972C5EEDD50085E23F /* ReusableView+Extention.swift */; };
 		698C6B9D2C5EEE940085E23F /* SsearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6B9C2C5EEE940085E23F /* SsearchVC.swift */; };
 		698C6B9F2C5EEEA10085E23F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6B9E2C5EEEA10085E23F /* SearchViewModel.swift */; };
+		698C6BA12C5EEF310085E23F /* AppCoordinatorInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BA02C5EEF310085E23F /* AppCoordinatorInter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		698C6B972C5EEDD50085E23F /* ReusableView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReusableView+Extention.swift"; sourceTree = "<group>"; };
 		698C6B9C2C5EEE940085E23F /* SsearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SsearchVC.swift; sourceTree = "<group>"; };
 		698C6B9E2C5EEEA10085E23F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		698C6BA02C5EEF310085E23F /* AppCoordinatorInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorInter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				698C6B722C5EE4E50085E23F /* Coordinator.swift */,
+				698C6BA02C5EEF310085E23F /* AppCoordinatorInter.swift */,
 			);
 			path = FlowCoordinator;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				698C6B862C5EE6B40085E23F /* Endpoint.swift in Sources */,
 				698C6B7C2C5EE60E0085E23F /* StorageService.swift in Sources */,
 				698C6B882C5EE6FC0085E23F /* APIClient.swift in Sources */,
+				698C6BA12C5EEF310085E23F /* AppCoordinatorInter.swift in Sources */,
 				698C6B7A2C5EE5E90085E23F /* Stored.swift in Sources */,
 				698C6B8F2C5EE7E30085E23F /* ErrorModel.swift in Sources */,
 				698C6B592C5EDA640085E23F /* AppDelegate.swift in Sources */,
