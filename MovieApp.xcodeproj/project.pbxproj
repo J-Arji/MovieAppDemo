@@ -91,12 +91,13 @@
 		698C6B6C2C5EDC060085E23F /* App */ = {
 			isa = PBXGroup;
 			children = (
+				698C6B582C5EDA640085E23F /* AppDelegate.swift */,
+				698C6B5A2C5EDA640085E23F /* SceneDelegate.swift */,
+				698C6B712C5EE4C50085E23F /* FlowCoordinator */,
 				698C6B7D2C5EE6620085E23F /* Networking */,
 				698C6B782C5EE5CE0085E23F /* Storage */,
 				698C6B922C5EEB360085E23F /* Extention */,
-				698C6B712C5EE4C50085E23F /* FlowCoordinator */,
-				698C6B582C5EDA640085E23F /* AppDelegate.swift */,
-				698C6B5A2C5EDA640085E23F /* SceneDelegate.swift */,
+				698C6B952C5EEBE60085E23F /* Constant */,
 				698C6B702C5EDC480085E23F /* Resource */,
 			);
 			path = App;
@@ -180,6 +181,13 @@
 				698C6B932C5EEB570085E23F /* Bundle + info.swift */,
 			);
 			path = Extention;
+			sourceTree = "<group>";
+		};
+		698C6B952C5EEBE60085E23F /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
