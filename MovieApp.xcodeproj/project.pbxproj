@@ -11,6 +11,10 @@
 		698C6B5B2C5EDA640085E23F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6B5A2C5EDA640085E23F /* SceneDelegate.swift */; };
 		698C6B622C5EDA660085E23F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698C6B612C5EDA660085E23F /* Assets.xcassets */; };
 		698C6B652C5EDA660085E23F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 698C6B642C5EDA660085E23F /* Base */; };
+		698C6B732C5EE4E50085E23F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6B722C5EE4E50085E23F /* Coordinator.swift */; };
+		698C6B772C5EE5BB0085E23F /* SimpleKeychain in Frameworks */ = {isa = PBXBuildFile; productRef = 698C6B762C5EE5BB0085E23F /* SimpleKeychain */; };
+		698C6B7A2C5EE5E90085E23F /* Stored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6B792C5EE5E90085E23F /* Stored.swift */; };
+		698C6B7C2C5EE60E0085E23F /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6B7B2C5EE60E0085E23F /* StorageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,9 @@
 		698C6B612C5EDA660085E23F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		698C6B642C5EDA660085E23F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		698C6B662C5EDA660085E23F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = MovieApp/App/Resource/Info.plist; sourceTree = SOURCE_ROOT; };
+		698C6B722C5EE4E50085E23F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		698C6B792C5EE5E90085E23F /* Stored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stored.swift; sourceTree = "<group>"; };
+		698C6B7B2C5EE60E0085E23F /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698C6B772C5EE5BB0085E23F /* SimpleKeychain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,8 @@
 		698C6B6C2C5EDC060085E23F /* App */ = {
 			isa = PBXGroup;
 			children = (
+				698C6B782C5EE5CE0085E23F /* Storage */,
+				698C6B712C5EE4C50085E23F /* FlowCoordinator */,
 				698C6B582C5EDA640085E23F /* AppDelegate.swift */,
 				698C6B5A2C5EDA640085E23F /* SceneDelegate.swift */,
 				698C6B702C5EDC480085E23F /* Resource */,
@@ -101,6 +111,23 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		698C6B712C5EE4C50085E23F /* FlowCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				698C6B722C5EE4E50085E23F /* Coordinator.swift */,
+			);
+			path = FlowCoordinator;
+			sourceTree = "<group>";
+		};
+		698C6B782C5EE5CE0085E23F /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				698C6B792C5EE5E90085E23F /* Stored.swift */,
+				698C6B7B2C5EE60E0085E23F /* StorageService.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +144,9 @@
 			dependencies = (
 			);
 			name = MovieApp;
+			packageProductDependencies = (
+				698C6B762C5EE5BB0085E23F /* SimpleKeychain */,
+			);
 			productName = MovieApp;
 			productReference = 698C6B552C5EDA640085E23F /* MovieApp.app */;
 			productType = "com.apple.product-type.application";
@@ -145,6 +175,9 @@
 				Base,
 			);
 			mainGroup = 698C6B4C2C5EDA640085E23F;
+			packageReferences = (
+				698C6B752C5EE5BB0085E23F /* XCRemoteSwiftPackageReference "SimpleKeychain" */,
+			);
 			productRefGroup = 698C6B562C5EDA640085E23F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -171,8 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698C6B7C2C5EE60E0085E23F /* StorageService.swift in Sources */,
+				698C6B7A2C5EE5E90085E23F /* Stored.swift in Sources */,
 				698C6B592C5EDA640085E23F /* AppDelegate.swift in Sources */,
 				698C6B5B2C5EDA640085E23F /* SceneDelegate.swift in Sources */,
+				698C6B732C5EE4E50085E23F /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +423,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		698C6B752C5EE5BB0085E23F /* XCRemoteSwiftPackageReference "SimpleKeychain" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/SimpleKeychain";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		698C6B762C5EE5BB0085E23F /* SimpleKeychain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 698C6B752C5EE5BB0085E23F /* XCRemoteSwiftPackageReference "SimpleKeychain" */;
+			productName = SimpleKeychain;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 698C6B4D2C5EDA640085E23F /* Project object */;
 }
