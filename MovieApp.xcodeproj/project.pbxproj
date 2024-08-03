@@ -29,6 +29,7 @@
 		698C6B9D2C5EEE940085E23F /* SsearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6B9C2C5EEE940085E23F /* SsearchVC.swift */; };
 		698C6B9F2C5EEEA10085E23F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6B9E2C5EEEA10085E23F /* SearchViewModel.swift */; };
 		698C6BA12C5EEF310085E23F /* AppCoordinatorInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BA02C5EEF310085E23F /* AppCoordinatorInter.swift */; };
+		698C6BA32C5EF0740085E23F /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BA22C5EF0740085E23F /* SearchCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		698C6B9C2C5EEE940085E23F /* SsearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SsearchVC.swift; sourceTree = "<group>"; };
 		698C6B9E2C5EEEA10085E23F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		698C6BA02C5EEF310085E23F /* AppCoordinatorInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorInter.swift; sourceTree = "<group>"; };
+		698C6BA22C5EF0740085E23F /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				698C6B722C5EE4E50085E23F /* Coordinator.swift */,
 				698C6BA02C5EEF310085E23F /* AppCoordinatorInter.swift */,
+				698C6BA22C5EF0740085E23F /* SearchCoordinator.swift */,
 			);
 			path = FlowCoordinator;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				698C6B7A2C5EE5E90085E23F /* Stored.swift in Sources */,
 				698C6B8F2C5EE7E30085E23F /* ErrorModel.swift in Sources */,
 				698C6B592C5EDA640085E23F /* AppDelegate.swift in Sources */,
+				698C6BA32C5EF0740085E23F /* SearchCoordinator.swift in Sources */,
 				698C6B822C5EE6960085E23F /* URLRequest+CURL.swift in Sources */,
 				698C6B842C5EE69F0085E23F /* Data+Decode.swift in Sources */,
 				698C6B942C5EEB570085E23F /* Bundle + info.swift in Sources */,
