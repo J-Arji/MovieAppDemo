@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+class MovieRemoteRepositoryImp: MovieRepository {
+    var storage: StorageServicable
+    
+    init(storage: StorageServicable) {
+        self.storage = storage
+    }
+    
+    func search(query: String, page: Int) async throws -> PaginationDTO<MovieDTO> {
+
+    }
+    
+    func detail(id: String) async throws -> MovieDTO {
+    }
+    
+}

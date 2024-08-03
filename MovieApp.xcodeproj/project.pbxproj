@@ -38,6 +38,9 @@
 		698C6BB42C5EF2720085E23F /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BB32C5EF2720085E23F /* Pagination.swift */; };
 		698C6BB62C5EF2C50085E23F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BB52C5EF2C50085E23F /* Movie.swift */; };
 		698C6BB82C5EF2D70085E23F /* MovieDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BB72C5EF2D70085E23F /* MovieDTO.swift */; };
+		698C6BBA2C5EF4CE0085E23F /* SearchInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BB92C5EF4CE0085E23F /* SearchInput.swift */; };
+		698C6BBD2C5EF6D00085E23F /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 698C6BBC2C5EF6D00085E23F /* Factory */; };
+		698C6BBF2C5EF6E20085E23F /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BBE2C5EF6E20085E23F /* AppService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,8 @@
 		698C6BB32C5EF2720085E23F /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		698C6BB52C5EF2C50085E23F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		698C6BB72C5EF2D70085E23F /* MovieDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDTO.swift; sourceTree = "<group>"; };
+		698C6BB92C5EF4CE0085E23F /* SearchInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInput.swift; sourceTree = "<group>"; };
+		698C6BBE2C5EF6E20085E23F /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				698C6B772C5EE5BB0085E23F /* SimpleKeychain in Frameworks */,
+				698C6BBD2C5EF6D00085E23F /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +131,7 @@
 				698C6B922C5EEB360085E23F /* Extention */,
 				698C6B952C5EEBE60085E23F /* Constant */,
 				698C6B702C5EDC480085E23F /* Resource */,
+				698C6BBE2C5EF6E20085E23F /* AppService.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -263,6 +270,7 @@
 			children = (
 				698C6BAB2C5EF1970085E23F /* PaginationDTO.swift */,
 				698C6BB72C5EF2D70085E23F /* MovieDTO.swift */,
+				698C6BB92C5EF4CE0085E23F /* SearchInput.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -303,6 +311,7 @@
 			name = MovieApp;
 			packageProductDependencies = (
 				698C6B762C5EE5BB0085E23F /* SimpleKeychain */,
+				698C6BBC2C5EF6D00085E23F /* Factory */,
 			);
 			productName = MovieApp;
 			productReference = 698C6B552C5EDA640085E23F /* MovieApp.app */;
@@ -334,6 +343,7 @@
 			mainGroup = 698C6B4C2C5EDA640085E23F;
 			packageReferences = (
 				698C6B752C5EE5BB0085E23F /* XCRemoteSwiftPackageReference "SimpleKeychain" */,
+				698C6BBB2C5EF6D00085E23F /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = 698C6B562C5EDA640085E23F /* Products */;
 			projectDirPath = "";
@@ -364,6 +374,7 @@
 			files = (
 				698C6B802C5EE68B0085E23F /*  Dictionary+Extension.swift in Sources */,
 				698C6B862C5EE6B40085E23F /* Endpoint.swift in Sources */,
+				698C6BBA2C5EF4CE0085E23F /* SearchInput.swift in Sources */,
 				698C6B7C2C5EE60E0085E23F /* StorageService.swift in Sources */,
 				698C6B882C5EE6FC0085E23F /* APIClient.swift in Sources */,
 				698C6BA12C5EEF310085E23F /* AppCoordinatorInter.swift in Sources */,
@@ -383,6 +394,7 @@
 				698C6B8D2C5EE7BA0085E23F /* HTTPMethod.swift in Sources */,
 				698C6B5B2C5EDA640085E23F /* SceneDelegate.swift in Sources */,
 				698C6B9D2C5EEE940085E23F /* SsearchVC.swift in Sources */,
+				698C6BBF2C5EF6E20085E23F /* AppService.swift in Sources */,
 				698C6B8A2C5EE7990085E23F /* DataTransferError.swift in Sources */,
 				698C6B9F2C5EEEA10085E23F /* SearchViewModel.swift in Sources */,
 				698C6B982C5EEDD50085E23F /* ReusableView+Extention.swift in Sources */,
@@ -613,6 +625,14 @@
 				minimumVersion = 1.1.0;
 			};
 		};
+		698C6BBB2C5EF6D00085E23F /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -620,6 +640,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 698C6B752C5EE5BB0085E23F /* XCRemoteSwiftPackageReference "SimpleKeychain" */;
 			productName = SimpleKeychain;
+		};
+		698C6BBC2C5EF6D00085E23F /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 698C6BBB2C5EF6D00085E23F /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
