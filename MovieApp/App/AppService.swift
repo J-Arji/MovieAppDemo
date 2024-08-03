@@ -17,3 +17,11 @@ extension Container {
         Factory(self) { MovieServiceImp(storage: self.storage())}
     }
 }
+
+
+// MARK: - Repositories
+extension Container {
+    var movieRepository: Factory<MovieRepository> {
+        Factory(self) { MovieRemoteRepositoryImp(remote: self.movieService() ) }
+    }
+}
