@@ -1,0 +1,46 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Cancel" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "منصرف شدم"
+          }
+        }
+      }
+    },
+    "Number" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عدد"
+          }
+        }
+      }
+    },
+    "retry" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تلاش مجدد"
+          }
+        }
+      }
+    },
+    "Search" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جستجو"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
