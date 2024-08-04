@@ -46,7 +46,7 @@ class SearchVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .systemBackground
-        title = "Search"
+        title = .labels(.search)
         navigationItem.backButtonDisplayMode = .minimal
         setupTableView()
         setUpNavigationItem()

@@ -50,6 +50,8 @@
 		698C6BD32C5F034B0085E23F /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BD22C5F034B0085E23F /* DetailCoordinator.swift */; };
 		698C6BD52C5F04800085E23F /* UIimageView + setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BD42C5F04800085E23F /* UIimageView + setImage.swift */; };
 		698C6BD72C5F04BE0085E23F /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BD62C5F04BE0085E23F /* ImageDownloader.swift */; };
+		698C6BD92C5F5CDD0085E23F /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BD82C5F5CDD0085E23F /* Text.swift */; };
+		698C6BDB2C5F5DC50085E23F /* String + Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BDA2C5F5DC50085E23F /* String + Localize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,8 @@
 		698C6BD22C5F034B0085E23F /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
 		698C6BD42C5F04800085E23F /* UIimageView + setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimageView + setImage.swift"; sourceTree = "<group>"; };
 		698C6BD62C5F04BE0085E23F /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		698C6BD82C5F5CDD0085E23F /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		698C6BDA2C5F5DC50085E23F /* String + Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Localize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +246,7 @@
 			children = (
 				698C6B932C5EEB570085E23F /* Bundle + info.swift */,
 				698C6BC82C5EFD420085E23F /* String + url.swift */,
+				698C6BDA2C5F5DC50085E23F /* String + Localize.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				698C6BC62C5EFBBF0085E23F /* API.swift */,
+				698C6BD82C5F5CDD0085E23F /* Text.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -438,6 +444,7 @@
 				698C6B942C5EEB570085E23F /* Bundle + info.swift in Sources */,
 				698C6BCB2C5F011C0085E23F /* MovieSection.swift in Sources */,
 				698C6BD32C5F034B0085E23F /* DetailCoordinator.swift in Sources */,
+				698C6BDB2C5F5DC50085E23F /* String + Localize.swift in Sources */,
 				698C6B8D2C5EE7BA0085E23F /* HTTPMethod.swift in Sources */,
 				698C6B5B2C5EDA640085E23F /* SceneDelegate.swift in Sources */,
 				698C6B9D2C5EEE940085E23F /* SsearchVC.swift in Sources */,
@@ -449,6 +456,7 @@
 				698C6BD12C5F019F0085E23F /* MovieCell.swift in Sources */,
 				698C6BC52C5EF99F0085E23F /* MovieService.swift in Sources */,
 				698C6B9F2C5EEEA10085E23F /* SearchViewModel.swift in Sources */,
+				698C6BD92C5F5CDD0085E23F /* Text.swift in Sources */,
 				698C6B982C5EEDD50085E23F /* ReusableView+Extention.swift in Sources */,
 				698C6B732C5EE4E50085E23F /* Coordinator.swift in Sources */,
 				698C6BA62C5EF12A0085E23F /* MovieRemoteRepositoryImp.swift in Sources */,

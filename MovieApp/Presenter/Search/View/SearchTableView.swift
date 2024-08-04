@@ -56,7 +56,7 @@ class SearchTableView: UIView {
     }
     
     private func configureSearchBar() {
-        searchBar.placeholder = "Search"
+        searchBar.placeholder = .labels(.search)
         searchBar.backgroundColor = .systemBackground
     }
     
