@@ -16,3 +16,11 @@ struct Pagination<T> {
     let totalResults: Int
 
 }
+
+
+//MARK: - loadMore
+extension Pagination {
+    var hasMorePages: Bool {
+        page * totalPage < totalResults
+    }
+}

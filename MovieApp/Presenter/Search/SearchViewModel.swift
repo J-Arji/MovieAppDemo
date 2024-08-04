@@ -10,11 +10,19 @@ import Combine
 
 protocol SearchViewModelInterface {
     typealias ViewState = SearchViewModel.State
-    var detailBuilder:  ShowDetailsDelegate?  { get }
+    
+    var detailBuilder:  ShowDetailsDelegate?                    { get }
+    var dataSource:     CurrentValueSubject<[Movie], Never>     { get set }
+    var selection:      PassthroughSubject<Movie, Never>        { get set }
+    var state:          CurrentValueSubject<ViewState, Never>   { get }
+    var service:        MovieRepository                         { get }
+    var search:         CurrentValueSubject<String, Never>      { get set }
     func pushVC(movie: Movie)
-
+    func loadMore(index: Int)
+    func reset()
     
 }
+
 
 
 class SearchViewModel {
@@ -81,7 +89,7 @@ extension SearchViewModel {
                 let objct = try await service.search(query: query, page: self.page).toDomain()
                 let items = objct.results
                 self.state.send(items.isEmpty ? .empty : .finished)
-//                self.hasMorePages = objct.hasMorePages
+                self.hasMorePages = objct.hasMorePages
                 dataSource.value.append(contentsOf: items)
             } catch {
                 print("👔",(error as? DataTransferError)?.description ?? error.localizedDescription)
@@ -96,7 +104,7 @@ extension SearchViewModel {
         addMore()
         fetchShows(with: search.value)
     }
-
+    
 }
 
 
@@ -105,7 +113,7 @@ extension SearchViewModel: SearchViewModelInterface {
     
     func pushVC(movie: Movie) {
         self.detailBuilder?.push(movie: movie)
-
+        
     }
 }
 
