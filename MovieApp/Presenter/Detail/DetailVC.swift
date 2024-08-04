@@ -11,6 +11,7 @@ import Combine
 class DetailVC: UIViewController {
     //MARK: -
     var viewModel: DetailViewModelInterface
+    private var disposeBag = Set<AnyCancellable>()
     
     private let coverImageView: UIImageView = {
         let imageView = UIImageView()
@@ -31,7 +32,17 @@ class DetailVC: UIViewController {
         return label
     }()
     
-
+    
+    // MARK: - Init methods
+    init(viewModel: DetailViewModelInterface) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     
     //MARK: - life Cycle
     override func viewDidLoad() {
@@ -76,5 +87,19 @@ class DetailVC: UIViewController {
             descriptionLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             descriptionLabel.bottomAnchor.constraint(greaterThanOrEqualTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
         ]
+    }
+    
+    
+    //MARK: - bind viewModel
+    private func bind() {
+        viewModel.movie
+            .eraseToAnyPublisher()
+            .receive(on: RunLoop.main)
+            .sink { [weak self] movie in
+                self?.coverImageView.setImage(from: movie.cover?.resource(type: .original), placeholder: UIImage(resource: .placeholder))
+                self?.descriptionLabel.text = movie.overview
+                self?.title = movie.title
+            }
+            .store(in: &disposeBag)
     }
 }
