@@ -94,7 +94,7 @@ class MovieCell: UITableViewCell {
     
     // MARK: - Public
     public func setModel(model: Movie) {
-//        posterImageView.setImage(from: model.poster?.resource(type: .small), placeholder: UIImage(resource: .placeholder))
+        posterImageView.setImage(from: model.poster?.resource(type: .small), placeholder: UIImage(resource: .placeholder))
         nameLabel.text = model.title
         releaseDateLabel.text = model.releaseDate
     }

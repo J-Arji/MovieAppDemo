@@ -48,6 +48,8 @@
 		698C6BCE2C5F014C0085E23F /* SearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BCD2C5F014C0085E23F /* SearchTableView.swift */; };
 		698C6BD12C5F019F0085E23F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BD02C5F019F0085E23F /* MovieCell.swift */; };
 		698C6BD32C5F034B0085E23F /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BD22C5F034B0085E23F /* DetailCoordinator.swift */; };
+		698C6BD52C5F04800085E23F /* UIimageView + setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BD42C5F04800085E23F /* UIimageView + setImage.swift */; };
+		698C6BD72C5F04BE0085E23F /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BD62C5F04BE0085E23F /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +94,8 @@
 		698C6BCD2C5F014C0085E23F /* SearchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableView.swift; sourceTree = "<group>"; };
 		698C6BD02C5F019F0085E23F /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		698C6BD22C5F034B0085E23F /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		698C6BD42C5F04800085E23F /* UIimageView + setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimageView + setImage.swift"; sourceTree = "<group>"; };
+		698C6BD62C5F04BE0085E23F /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +209,7 @@
 			children = (
 				698C6B792C5EE5E90085E23F /* Stored.swift */,
 				698C6B7B2C5EE60E0085E23F /* StorageService.swift */,
+				698C6BD62C5F04BE0085E23F /* ImageDownloader.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				698C6B972C5EEDD50085E23F /* ReusableView+Extention.swift */,
+				698C6BD42C5F04800085E23F /* UIimageView + setImage.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -417,6 +423,7 @@
 				698C6B882C5EE6FC0085E23F /* APIClient.swift in Sources */,
 				698C6BA12C5EEF310085E23F /* AppCoordinatorInter.swift in Sources */,
 				698C6BB12C5EF1CC0085E23F /* AnyConverter.swift in Sources */,
+				698C6BD72C5F04BE0085E23F /* ImageDownloader.swift in Sources */,
 				698C6B7A2C5EE5E90085E23F /* Stored.swift in Sources */,
 				698C6B8F2C5EE7E30085E23F /* ErrorModel.swift in Sources */,
 				698C6BB62C5EF2C50085E23F /* Movie.swift in Sources */,
@@ -434,6 +441,7 @@
 				698C6B8D2C5EE7BA0085E23F /* HTTPMethod.swift in Sources */,
 				698C6B5B2C5EDA640085E23F /* SceneDelegate.swift in Sources */,
 				698C6B9D2C5EEE940085E23F /* SsearchVC.swift in Sources */,
+				698C6BD52C5F04800085E23F /* UIimageView + setImage.swift in Sources */,
 				698C6BBF2C5EF6E20085E23F /* AppService.swift in Sources */,
 				698C6BC72C5EFBBF0085E23F /* API.swift in Sources */,
 				698C6B8A2C5EE7990085E23F /* DataTransferError.swift in Sources */,

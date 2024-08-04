@@ -32,4 +32,8 @@ extension Container {
     var searchCoordinator: Factory<SearchCoordinatorInterface> {
         Factory(self) { SearchCoordinator(service: self.movieRepository() ) }
     }
+    
+    func detailCoordinator(movie: Movie) -> Factory<DetailCoordinatorInterface> {
+        Factory(self) { DetailCoordinator(movie: movie) }
+    }
 }
