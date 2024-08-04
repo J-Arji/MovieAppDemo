@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Factory
 
 protocol DetailCoordinatorInterface: Coordinator {
     var navigationController: UINavigationController? { get set }
