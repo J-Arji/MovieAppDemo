@@ -1,0 +1,46 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Cancel" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "منصرف شدم"
+          }
+        }
+      }
+    },
+    "Nothing found 🔎" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "چیزی پیدا نشد🔍"
+          }
+        }
+      }
+    },
+    "Search" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جستجو"
+          }
+        }
+      }
+    },
+    "something wrong please try again" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مشکلی به وجود آمده . لطفا مجدد تلاش بکنید"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
