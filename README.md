@@ -49,6 +49,20 @@ App Layer depends on all of them
 
 
 
+
+
+## Support:  
+### 🌎 Multi-Language Support
+This project supports multiple languages.
+- [English]
+- [Persian]
+
+  
+### Dark and Light Mode
+
+
+
+
 ## Dependency
 It uses SPM for dependency management and you do not need to install the other third-party management ([Swift Package Manager](https://github.com/apple/swift-package-manager))
 - [SimpleKeychain](https://github.com/auth0/SimpleKeychain) : It is a utility for securely storing sensitive data, such as passwords, tokens, or API keys, in the iOS Keychain.
