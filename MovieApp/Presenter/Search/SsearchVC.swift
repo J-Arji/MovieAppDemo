@@ -40,6 +40,7 @@ class SearchVC: UIViewController {
     override func loadView() {
         super.loadView()
         view = resultView
+        
     }
     
     //MARK: - Life cycle
@@ -50,6 +51,7 @@ class SearchVC: UIViewController {
         navigationItem.backButtonDisplayMode = .minimal
         setupTableView()
         setUpNavigationItem()
+        applyTheme()
         subscribe()
         bind()
         
@@ -94,12 +96,17 @@ class SearchVC: UIViewController {
         resultView.tableView.register(MovieCell.self)
         resultView.tableView.delegate = self
         resultView.tableView.separatorStyle = .none
+        resultView.backgroundColor = .clear
         searchBar.delegate = self
         
     }
     
     func setUpNavigationItem() {
         navigationItem.hidesBackButton = true
+    }
+    
+    private func applyTheme() {
+        view.backgroundColor = .Design.Primary.background
     }
     
     private func updateView(state: SearchViewModel.State)  {
