@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 ///A protocol for converting DTOs to domain models.
 protocol AnyConverter {
     associatedtype Output

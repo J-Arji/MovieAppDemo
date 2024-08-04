@@ -46,9 +46,9 @@ extension MovieServiceImp.Router: Endpoint {
     var path: String {
         switch self {
         case .search:
-            return ""
+            return API.search(.movie).url
         case let .detail(id):
-            return  ""
+            return  API.detail(.movie, id: id).url
         }
     }
     
@@ -70,7 +70,9 @@ extension MovieServiceImp.Router: Endpoint {
         var query: [URLQueryItem] = [URLQueryItem(name: "api_key", value: Container.shared.storage().apiKey)]
         switch self {
         case let .search(input):
-        return nil
+            let items = input.queryItems ?? []
+            query.append(contentsOf: items)
+            return query
             
         default:
             return query
