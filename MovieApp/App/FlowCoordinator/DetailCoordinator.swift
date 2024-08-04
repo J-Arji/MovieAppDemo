@@ -26,6 +26,8 @@ final class DetailCoordinator: DetailCoordinatorInterface {
     
     @MainActor
     func start() {
-       
+        let viewModel = DetailViewModel(movie: .init(movie))
+        let vc = DetailVC(viewModel: viewModel)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
