@@ -42,6 +42,7 @@
 		698C6BBD2C5EF6D00085E23F /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 698C6BBC2C5EF6D00085E23F /* Factory */; };
 		698C6BBF2C5EF6E20085E23F /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BBE2C5EF6E20085E23F /* AppService.swift */; };
 		698C6BC52C5EF99F0085E23F /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BC42C5EF99F0085E23F /* MovieService.swift */; };
+		698C6BC72C5EFBBF0085E23F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BC62C5EFBBF0085E23F /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		698C6BB92C5EF4CE0085E23F /* SearchInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInput.swift; sourceTree = "<group>"; };
 		698C6BBE2C5EF6E20085E23F /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		698C6BC42C5EF99F0085E23F /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		698C6BC62C5EFBBF0085E23F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 		698C6B952C5EEBE60085E23F /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				698C6BC62C5EFBBF0085E23F /* API.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				698C6B5B2C5EDA640085E23F /* SceneDelegate.swift in Sources */,
 				698C6B9D2C5EEE940085E23F /* SsearchVC.swift in Sources */,
 				698C6BBF2C5EF6E20085E23F /* AppService.swift in Sources */,
+				698C6BC72C5EFBBF0085E23F /* API.swift in Sources */,
 				698C6B8A2C5EE7990085E23F /* DataTransferError.swift in Sources */,
 				698C6BC52C5EF99F0085E23F /* MovieService.swift in Sources */,
 				698C6B9F2C5EEEA10085E23F /* SearchViewModel.swift in Sources */,
