@@ -1,7 +1,7 @@
 # Movie App
 
 
-# Description
+## Description
 In this app, you can search for the movie you want and view its details.
 
 ## Features
@@ -11,7 +11,7 @@ In this app, you can search for the movie you want and view its details.
 
 
 
-# Getting started
+## Getting started
 
 1. Clone the project.
 2. Go to the repo folder.
@@ -34,7 +34,10 @@ In this app, you can search for the movie you want and view its details.
 > You must be registered on the [TMDB](https://www.themoviedb.org/signup) site before generating the API key.
 > The app will not work without an API key
 
-# Structure
+
+
+
+## Structure
 - Presenter: It contains all User interface application code
 - Domain: Contains business logic and doesn’t depend on any other layer.
 - Data: Gets data from remote or local data sources and depend domain layer
@@ -46,7 +49,7 @@ App Layer depends on all of them
 
 
 
-# Dependency
+## Dependency
 It uses SPM for dependency management and you do not need to install the other third-party management ([Swift Package Manager](https://github.com/apple/swift-package-manager))
 - [SimpleKeychain](https://github.com/auth0/SimpleKeychain) : It is a utility for securely storing sensitive data, such as passwords, tokens, or API keys, in the iOS Keychain.
 - [FActory](https://github.com/hmlongco/Factory) :  Factory is A new approach to Container-Based Dependency Injection for Swift
