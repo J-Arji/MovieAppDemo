@@ -23,32 +23,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "022FC6A1-F66E-4169-817C-9F1D53D8F8E7"
+            uuid = "505D7E4C-C666-4313-99BC-F86037AA2A56"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MovieApp/Data/Repository/MovieService.swift"
+            filePath = "MovieApp/App/SceneDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "queryItems"
-            landmarkType = "24">
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "setupLanguage()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "ADE5CC13-D05C-476C-A9AC-C5C320816CDC"
-            shouldBeEnabled = "No"
+            uuid = "860B03BF-E669-4467-AD18-E364581F7C88"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MovieApp/App/Storage/StorageService.swift"
+            filePath = "MovieApp/App/SceneDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "setup()"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "setupLanguage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D515DB75-5E19-4D3B-B86B-8CAFF7ADB58A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieApp/App/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "setupLanguage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -18,25 +18,29 @@ protocol MovieService {
 
 class MovieServiceImp: MovieService, APIClient {
     var storage: StorageServicable
-   
+    
+    private var defualtInput: GlobalInput {
+        return GlobalInput(apiKey: storage.apiKey, language: storage.language.rawValue)
+    }
+    
    init(storage: StorageServicable) {
        self.storage = storage
    }
    
    func search(query: String, page: Int) async throws -> PaginationDTO<MovieDTO> {
-       let input = SearchInput(query: query, page: page)
+       let input = SearchInput(query: query, page: page, item: defualtInput)
        return try await request(endpoint: Router.search(input: input))
    }
    
    func detail(id: String) async throws -> MovieDTO {
-       return try await request(endpoint: Router.detail(id: id))
+       return try await request(endpoint: Router.detail(id: id, query: defualtInput))
    }
 }
 
 extension MovieServiceImp {
     enum Router {
         case search(input: SearchInput)
-        case detail(id: String)
+        case detail(id: String, query: GlobalInput)
     }
 }
 
@@ -47,7 +51,7 @@ extension MovieServiceImp.Router: Endpoint {
         switch self {
         case .search:
             return API.search(.movie).url
-        case let .detail(id):
+        case let .detail(id, _):
             return  API.detail(.movie, id: id).url
         }
     }
@@ -67,15 +71,12 @@ extension MovieServiceImp.Router: Endpoint {
     }
     
     var queryItems: [URLQueryItem]? {
-        var query: [URLQueryItem] = [URLQueryItem(name: "api_key", value: Container.shared.storage().apiKey)]
         switch self {
         case let .search(input):
-            let items = input.queryItems ?? []
-            query.append(contentsOf: items)
-            return query
+            return input.queryItems
             
-        default:
-            return query
+        case let .detail(_, query):
+            return query.queryItems
         }
     }
 }
