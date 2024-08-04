@@ -113,20 +113,25 @@ class SearchVC: UIViewController {
         switch state {
         case .loading:
             searchView.startLoading()
-            
+            searchView.hideEmptyView()
+
         case .empty:
             viewModel.reset()
             searchView.stopLoading()
+            searchView.showEmptyView(with: .labels(.empty))
             
         case .finished:
             searchView.stopLoading()
+            searchView.hideEmptyView()
             
         case .error:
             searchView.stopLoading()
+            searchView.showEmptyView(with: .labels(.wrong))
             viewModel.reset()
             
         default:
             searchView.stopLoading()
+            searchView.hideEmptyView()
             viewModel.reset()
         }
     }

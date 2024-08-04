@@ -17,4 +17,6 @@ enum LabelText: String.LocalizationValue {
     
     // MARK: - Global
     case search = "Search"
+    case empty = "Nothing found 🔎"
+    case wrong = "something wrong please try again"
 }
