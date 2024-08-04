@@ -19,8 +19,10 @@ In this app, you can search for the movie you want and view its details.
 4. Wait for SPM to fetch all dependencies.
 5. Register and generate an API key from The Movie Database ([TMDB](https://developer.themoviedb.org/docs/getting-started)).
 6. Save the API key as API_KEY in the Config.xcconfig file.
-7. Run the app using Command + R.
-8. Good luck 🎉
+7. Ensure you have Xcode 15 or higher and iOS version 17 or higher.
+8. Run the app using Command + R.
+9. Good luck 🎉
+
 
 
 
