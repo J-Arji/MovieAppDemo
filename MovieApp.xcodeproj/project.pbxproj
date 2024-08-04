@@ -58,6 +58,7 @@
 		698C6BE42C5F64490085E23F /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BE32C5F64490085E23F /* DetailViewModel.swift */; };
 		698C6BE72C5F68E20085E23F /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BE62C5F68E20085E23F /* Language.swift */; };
 		698C6BE92C5F698A0085E23F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 698C6BE82C5F698A0085E23F /* Localizable.xcstrings */; };
+		698C6BEC2C5F8A5F0085E23F /* Loadable + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BEB2C5F8A5F0085E23F /* Loadable + UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,7 @@
 		698C6BE62C5F68E20085E23F /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		698C6BE82C5F698A0085E23F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		698C6BEA2C5F6A1E0085E23F /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		698C6BEB2C5F8A5F0085E23F /* Loadable + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Loadable + UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 		698C6B962C5EEDC80085E23F /* Extention */ = {
 			isa = PBXGroup;
 			children = (
+				698C6BEB2C5F8A5F0085E23F /* Loadable + UIView.swift */,
 				698C6B972C5EEDD50085E23F /* ReusableView+Extention.swift */,
 				698C6BD42C5F04800085E23F /* UIimageView + setImage.swift */,
 			);
@@ -473,6 +476,7 @@
 				698C6BB62C5EF2C50085E23F /* Movie.swift in Sources */,
 				698C6B592C5EDA640085E23F /* AppDelegate.swift in Sources */,
 				698C6BA32C5EF0740085E23F /* SearchCoordinator.swift in Sources */,
+				698C6BEC2C5F8A5F0085E23F /* Loadable + UIView.swift in Sources */,
 				698C6B822C5EE6960085E23F /* URLRequest+CURL.swift in Sources */,
 				698C6B842C5EE69F0085E23F /* Data+Decode.swift in Sources */,
 				698C6BB42C5EF2720085E23F /* Pagination.swift in Sources */,
