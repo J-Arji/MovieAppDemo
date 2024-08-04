@@ -11,6 +11,9 @@ import UIKit
 protocol SearchCoordinatorInterface: Coordinator {
     var navigationController: UINavigationController? { get set }
 }
+protocol ShowDetailsDelegate: AnyObject {
+    func push(movie: Movie)
+}
 
 
 enum SearchChild {

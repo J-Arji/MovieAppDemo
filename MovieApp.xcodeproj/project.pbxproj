@@ -43,6 +43,7 @@
 		698C6BBF2C5EF6E20085E23F /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BBE2C5EF6E20085E23F /* AppService.swift */; };
 		698C6BC52C5EF99F0085E23F /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BC42C5EF99F0085E23F /* MovieService.swift */; };
 		698C6BC72C5EFBBF0085E23F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BC62C5EFBBF0085E23F /* API.swift */; };
+		698C6BC92C5EFD420085E23F /* String + url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BC82C5EFD420085E23F /* String + url.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		698C6BBE2C5EF6E20085E23F /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
 		698C6BC42C5EF99F0085E23F /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		698C6BC62C5EFBBF0085E23F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		698C6BC82C5EFD420085E23F /* String + url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + url.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				698C6B932C5EEB570085E23F /* Bundle + info.swift */,
+				698C6BC82C5EFD420085E23F /* String + url.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			files = (
 				698C6B802C5EE68B0085E23F /*  Dictionary+Extension.swift in Sources */,
 				698C6B862C5EE6B40085E23F /* Endpoint.swift in Sources */,
+				698C6BC92C5EFD420085E23F /* String + url.swift in Sources */,
 				698C6BBA2C5EF4CE0085E23F /* SearchInput.swift in Sources */,
 				698C6B7C2C5EE60E0085E23F /* StorageService.swift in Sources */,
 				698C6B882C5EE6FC0085E23F /* APIClient.swift in Sources */,
