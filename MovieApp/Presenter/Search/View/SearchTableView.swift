@@ -1,3 +1,6 @@
+7553c036701df610e97f386dfece0edd
+
+
 //
 //  SearchTableView.swift
 //  MovieApp
@@ -36,7 +39,7 @@ class SearchTableView: UIView {
     
     // MARK: - Private
     private func setupUI() {
-        backgroundColor = .secondarySystemBackground
+        backgroundColor = .clear
         constructHierarchy()
         activateConstraints()
         configureTableView()
@@ -50,6 +53,7 @@ class SearchTableView: UIView {
     
     private func activateConstraints() {
         var constraints = [NSLayoutConstraint]()
+        
         constraints.append(contentsOf: activateConstraintsForTableView())
         constraints.append(contentsOf: activateConstraintsForSearchBar())
         NSLayoutConstraint.activate(constraints)
@@ -57,14 +61,21 @@ class SearchTableView: UIView {
     
     private func configureSearchBar() {
         searchBar.placeholder = .labels(.search)
-        searchBar.backgroundColor = .systemBackground
+        searchBar.backgroundColor = .Design.Primary.background
+        searchBar.barTintColor = .Design.Primary.background
+        searchBar.searchBarStyle = .minimal
+        searchBar.searchTextField.layer.borderColor = UIColor.Design.Primary.border.cgColor
+        searchBar.searchTextField.borderStyle = .none
+        searchBar.searchTextField.layer.borderWidth = 1
+        searchBar.searchTextField.layer.cornerRadius = 6
+        searchBar.searchTextField.backgroundColor = .Design.Primary.background
     }
     
     private func configureTableView() {
         tableView.keyboardDismissMode = .onDrag
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = UITableView.automaticDimension
-        tableView.backgroundColor = .systemBackground
+        tableView.backgroundColor = .Design.Primary.background
     }
     
     private func activateConstraintsForTableView() -> [NSLayoutConstraint] {
