@@ -27,10 +27,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func setupLanguage() {
-        print(Locale.current.language.languageCode?.identifier)
         guard let language = Locale.current.language.languageCode?.identifier else { return }
         storage.language = Language.init(rawValue: language) ?? .english
-
     }
 }
 
