@@ -58,7 +58,7 @@ class MovieCell: UITableViewCell {
     
     
     private func setupUI() {
-        backgroundColor = .secondarySystemBackground
+        backgroundColor = .systemBackground
         constructHierarchy()
         activateConstraints()
     }

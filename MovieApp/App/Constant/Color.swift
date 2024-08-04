@@ -15,7 +15,7 @@ extension UIColor {
             static let buttonTint = UIColor.systemBlue
             static let success = UIColor.systemGreen
             static let faild = UIColor.systemRed
-            static let text = UIColor.white
+            static let text = UIColor.black
         }
         
         enum Secondary {
