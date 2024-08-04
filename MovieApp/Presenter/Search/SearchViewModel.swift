@@ -47,12 +47,13 @@ class SearchViewModel {
     
     private func subscribe() {
         search
-            .filter { !$0.isEmpty && $0.count >= 3 }
             .removeDuplicates()
             .debounce(for: .seconds(0.8),scheduler: DispatchQueue.main)
             .sink(receiveValue: { [weak self] query in
+                if !query.isEmpty && query.count >= 3 {
+                    self?.fetchShows(with: query)
+                }
                 self?.reset()
-                self?.fetchShows(with: query)
             })
             .store(in: &disposeBag)
         

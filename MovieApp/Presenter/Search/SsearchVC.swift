@@ -138,10 +138,10 @@ extension SearchVC: UISearchBarDelegate {
         viewModel.search.send(searchText)
     }
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        viewModel.search.send("")
-        viewModel.reset()
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        viewModel.search.send(searchBar.text ?? "")
     }
+
 }
 
 

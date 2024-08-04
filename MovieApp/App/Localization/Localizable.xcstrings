@@ -12,6 +12,7 @@
       }
     },
     "Number" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fa" : {
           "stringUnit" : {
@@ -22,6 +23,7 @@
       }
     },
     "retry" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fa" : {
           "stringUnit" : {
