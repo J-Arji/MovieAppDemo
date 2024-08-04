@@ -93,7 +93,6 @@ extension SearchViewModel {
                 self.hasMorePages = objct.hasMorePages
                 dataSource.value.append(contentsOf: items)
             } catch {
-                print("👔",(error as? DataTransferError)?.description ?? error.localizedDescription)
                 self.state.send(.error((error as? DataTransferError)?.description ?? error.localizedDescription))
             }
         }

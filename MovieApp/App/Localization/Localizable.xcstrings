@@ -11,24 +11,12 @@
         }
       }
     },
-    "Number" : {
-      "extractionState" : "stale",
+    "Nothing found 🔎" : {
       "localizations" : {
         "fa" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "عدد"
-          }
-        }
-      }
-    },
-    "retry" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "fa" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "تلاش مجدد"
+            "value" : "چیزی پیدا نشد🔍"
           }
         }
       }
@@ -39,6 +27,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "جستجو"
+          }
+        }
+      }
+    },
+    "something wrong please try again" : {
+      "localizations" : {
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مشکلی به وجود آمده . لطفا مجدد تلاش بکنید"
           }
         }
       }
