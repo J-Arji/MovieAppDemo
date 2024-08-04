@@ -24,6 +24,17 @@ In this app, you can search for the movie you want and view its details.
 
 
 
+# Structure
+- Presenter: It contains all User interface application code
+- Domain: Contains business logic and doesn’t depend on any other layer.
+- Data: Gets data from remote or local data sources and depend domain layer
+- App: It contains the Dependency Injection Container & the Environment.
+
+Presentation Layer & Data Layer both depend on Domain Layer
+Presentation Layer & Data Layer don’t depend on each other
+App Layer depends on all of them
+
+
 
 
 
