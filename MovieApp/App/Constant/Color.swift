@@ -11,10 +11,7 @@ extension UIColor {
     struct Design {
         enum Primary {
             static let background = UIColor.background
-            static let placeholder = UIColor.gray
-            static let buttonTint = UIColor.systemBlue
-            static let success = UIColor.systemGreen
-            static let faild = UIColor.systemRed
+            static let placeholder = UIColor.gray            
             static let text = UIColor.text
             static let border = UIColor.border
         }
