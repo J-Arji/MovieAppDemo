@@ -62,7 +62,7 @@ class SearchVC: UIViewController {
     
     //MARK: - bind
     private func bind() {
-        viewModel.viewState
+        viewModel.state
             .eraseToAnyPublisher()
             .receive(on:RunLoop.main)
             .sink(receiveValue:  { [weak self] state in

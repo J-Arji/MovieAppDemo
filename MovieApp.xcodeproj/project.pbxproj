@@ -47,6 +47,7 @@
 		698C6BCB2C5F011C0085E23F /* MovieSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BCA2C5F011C0085E23F /* MovieSection.swift */; };
 		698C6BCE2C5F014C0085E23F /* SearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BCD2C5F014C0085E23F /* SearchTableView.swift */; };
 		698C6BD12C5F019F0085E23F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BD02C5F019F0085E23F /* MovieCell.swift */; };
+		698C6BD32C5F034B0085E23F /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C6BD22C5F034B0085E23F /* DetailCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		698C6BCA2C5F011C0085E23F /* MovieSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSection.swift; sourceTree = "<group>"; };
 		698C6BCD2C5F014C0085E23F /* SearchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableView.swift; sourceTree = "<group>"; };
 		698C6BD02C5F019F0085E23F /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		698C6BD22C5F034B0085E23F /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				698C6B722C5EE4E50085E23F /* Coordinator.swift */,
 				698C6BA02C5EEF310085E23F /* AppCoordinatorInter.swift */,
 				698C6BA22C5EF0740085E23F /* SearchCoordinator.swift */,
+				698C6BD22C5F034B0085E23F /* DetailCoordinator.swift */,
 			);
 			path = FlowCoordinator;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				698C6BB82C5EF2D70085E23F /* MovieDTO.swift in Sources */,
 				698C6B942C5EEB570085E23F /* Bundle + info.swift in Sources */,
 				698C6BCB2C5F011C0085E23F /* MovieSection.swift in Sources */,
+				698C6BD32C5F034B0085E23F /* DetailCoordinator.swift in Sources */,
 				698C6B8D2C5EE7BA0085E23F /* HTTPMethod.swift in Sources */,
 				698C6B5B2C5EDA640085E23F /* SceneDelegate.swift in Sources */,
 				698C6B9D2C5EEE940085E23F /* SsearchVC.swift in Sources */,

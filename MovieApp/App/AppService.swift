@@ -25,3 +25,11 @@ extension Container {
         Factory(self) { MovieRemoteRepositoryImp(remote: self.movieService() ) }
     }
 }
+
+
+// MARK: - Coordinator
+extension Container {
+    var searchCoordinator: Factory<SearchCoordinatorInterface> {
+        Factory(self) { SearchCoordinator(service: self.movieRepository() ) }
+    }
+}
