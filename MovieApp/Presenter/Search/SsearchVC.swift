@@ -15,7 +15,7 @@ class SearchVC: UIViewController {
     typealias Snapshot = NSDiffableDataSourceSnapshot<MovieSection, Movie>
     typealias DataSource = UITableViewDiffableDataSource<MovieSection, Movie>
     
-    private lazy var resultView: SearchTableView = {
+    private lazy var searchView: SearchTableView = {
         let view = SearchTableView()
         return view
     }()
@@ -24,7 +24,7 @@ class SearchVC: UIViewController {
     private var disposeBag = Set<AnyCancellable>()
     
     private var searchBar: UISearchBar {
-        resultView.searchBar
+        searchView.searchBar
     }
     
     // MARK: - Init methods
@@ -39,7 +39,7 @@ class SearchVC: UIViewController {
     
     override func loadView() {
         super.loadView()
-        view = resultView
+        view = searchView
         
     }
     
@@ -93,10 +93,10 @@ class SearchVC: UIViewController {
     
     //MARK: - setup
     private func setupTableView() {
-        resultView.tableView.register(MovieCell.self)
-        resultView.tableView.delegate = self
-        resultView.tableView.separatorStyle = .none
-        resultView.backgroundColor = .clear
+        searchView.tableView.register(MovieCell.self)
+        searchView.tableView.delegate = self
+        searchView.tableView.separatorStyle = .none
+        searchView.backgroundColor = .clear
         searchBar.delegate = self
         
     }
@@ -111,20 +111,23 @@ class SearchVC: UIViewController {
     
     private func updateView(state: SearchViewModel.State)  {
         switch state {
-        case .idle:
-            viewModel.reset()
-            break;
         case .loading:
-            break;
+            searchView.startLoading()
             
         case .empty:
             viewModel.reset()
+            searchView.stopLoading()
+            
         case .finished:
-            break
+            searchView.stopLoading()
             
         case .error:
+            searchView.stopLoading()
             viewModel.reset()
-            break
+            
+        default:
+            searchView.stopLoading()
+            viewModel.reset()
         }
     }
     
@@ -141,7 +144,7 @@ extension SearchVC: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         viewModel.search.send(searchBar.text ?? "")
     }
-
+    
 }
 
 
@@ -167,7 +170,7 @@ extension SearchVC: UITableViewDelegate {
 extension SearchVC {
     func makeDataSource() -> DataSource {
         return UITableViewDiffableDataSource(
-            tableView: resultView.tableView,
+            tableView: searchView.tableView,
             cellProvider: {  tableView, indexPath, movie in
                 let cell: MovieCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
                 cell.setModel(model: movie)
@@ -176,3 +179,6 @@ extension SearchVC {
         )
     }
 }
+
+
+

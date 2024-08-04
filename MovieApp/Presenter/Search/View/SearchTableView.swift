@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchTableView: UIView {
+class SearchTableView: UIView, Loadable {
     //MARK: - Properties
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
