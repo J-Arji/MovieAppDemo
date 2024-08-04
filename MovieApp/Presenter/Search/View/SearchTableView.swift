@@ -1,6 +1,3 @@
-7553c036701df610e97f386dfece0edd
-
-
 //
 //  SearchTableView.swift
 //  MovieApp
