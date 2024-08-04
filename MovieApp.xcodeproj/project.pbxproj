@@ -78,7 +78,7 @@
 		698C6B892C5EE7990085E23F /* DataTransferError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferError.swift; sourceTree = "<group>"; };
 		698C6B8C2C5EE7BA0085E23F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		698C6B8E2C5EE7E30085E23F /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
-		698C6B902C5EEA2F0085E23F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		698C6B902C5EEA2F0085E23F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = MovieApp/App/Resource/Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		698C6B932C5EEB570085E23F /* Bundle + info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle + info.swift"; sourceTree = "<group>"; };
 		698C6B972C5EEDD50085E23F /* ReusableView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReusableView+Extention.swift"; sourceTree = "<group>"; };
 		698C6B9C2C5EEE940085E23F /* SsearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SsearchVC.swift; sourceTree = "<group>"; };
