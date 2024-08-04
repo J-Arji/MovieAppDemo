@@ -20,7 +20,8 @@ class MovieCell: UITableViewCell {
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        //    label.font = UIFont.app_title3().bolded
+        label.font = .Design.Body
+        label.textColor = .Design.Primary.text
         label.adjustsFontForContentSizeCategory = true
         return label
     }()
@@ -28,7 +29,8 @@ class MovieCell: UITableViewCell {
     private let releaseDateLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.numberOfLines = 0
-        //    label.font = UIFont.app_body()
+        label.font = .Design.caption
+        label.textColor = .Design.Primary.placeholder
         label.adjustsFontForContentSizeCategory = true
         return label
     }()
@@ -56,7 +58,7 @@ class MovieCell: UITableViewCell {
     
     
     private func setupUI() {
-        backgroundColor = .secondarySystemBackground
+        backgroundColor = .systemBackground
         constructHierarchy()
         activateConstraints()
     }
