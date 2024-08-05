@@ -59,6 +59,8 @@ This project supports multiple languages.
 
   
 ### Dark and Light Mode
+"Product menu > Scheme > Edit Scheme".
+You can change the language that your app will launch by choosing it from the "App Language" option
 
 
 
